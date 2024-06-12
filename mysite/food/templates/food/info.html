@@ -10,6 +10,7 @@
       <h1>{{ productList.product_name }}</h1>
       <h2>{{ productList.product_doc}}</h2>
       <h2>${{ productList.product_price}}</h2>
+      <a href="{% url 'food:delete_product' productList.id%} ">Delete </a>
     </div>
   </div>
 </div>

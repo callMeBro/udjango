@@ -1,4 +1,9 @@
+{% extends 'food/base.html'%} {% block body %}
+
+<!-- create the form with post method  csrf prevents cross site scripting; provides security -->
 <form method="POST">
   {% csrf_token %} {{form}}
   <button type="submit">Save</button>
 </form>
+
+{% endblock %}
